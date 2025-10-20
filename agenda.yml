@@ -1,0 +1,6 @@
+          - type: group
+            widgets:
+            - type: clock
+              hour-format: 24h
+            - type: calendar
+              first-day-of-week: monday

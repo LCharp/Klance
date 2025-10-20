@@ -1,0 +1,145 @@
+pages:
+  - name: Search
+    center-vertically: true
+    columns:
+      - size: full
+        widgets:
+             $include: startpage.yml
+                
+                
+  - name: Home
+    columns:
+      - size: small
+        widgets:
+          $include: agenda.yml
+
+      - size: full
+       
+        widgets:
+
+          - type: rss
+            style: detailed-list
+            limit: 20
+            collapse-after: 5
+            cache: 12h
+            feeds:
+              - url: https://www.gamekult.com/feed.xml
+              - url: https://www.actugaming.net/feed
+              - url: https://korben.info/feed
+
+          - type: videos
+            channels:
+              - UCiN9NxmYPYPdB2qQAhBrc7Q # Le Passe Temps
+              - UCQNsB8n2QhRzjdfjyZ_2S_g # RunWise
+              - UC73Te9mCdJcHxr_7hPBeGBw # Origami
+
+          - type: group
+            widgets:
+              - type: reddit
+                subreddit: Switch
+                show-thumbnails: true
+              - type: reddit
+                subreddit: France
+                show-thumbnails: true
+
+      - size: small
+        widgets:
+          - type: weather
+            location: Poitiers, France
+            units: metric # alternatively "imperial"
+            hour-format: 12h # alternatively "24h"
+
+
+  - name: Work
+    columns:
+      - size: small
+        widgets:
+          $include: agenda.yml
+
+      - size: full
+        widgets:
+          - type: rss
+            style: detailed-list
+            limit: 50
+            collapse-after: 3
+            cache: 2h
+            feeds:
+              - url: http://gisgeography.com/feed
+          - type: group
+            widgets:
+              - type: reddit
+                subreddit: GIS
+                show-thumbnails: true
+              - type: reddit
+                subreddit: QGIS
+                show-thumbnails: true
+              - type: reddit
+                subreddit: FME
+                show-thumbnails: true                
+              
+      - size: small
+        widgets:              
+          - type: bookmarks
+            groups:
+              - title: Liens
+                links:
+                  - title: FME 2021
+                    url: http://37.187.154.198:8080/fmeserver/#/home
+                  - title: FME 2024
+                    url: http://162.19.102.118/fmeserver/
+                  - title: Outlook
+                    url: https://outlook.office365.com/mail
+                  - title: MySilae
+                    url: http://my.silae.fr
+                  - title: eDocPerso
+                    url: https://edocperso.fr/login         
+                         
+              
+              - title: Docs
+                links:
+                  - title: Documentation Veremes
+                    url: https://www.veremes.com/wp-content/uploads/guide-des-transformers/Guide%20des%20Transformers%20FME.pdf
+                  - title: Documentation Safe
+                    url: https://support.safe.com/hc/en-us/p/documentation
+
+
+  - name: Video
+    columns:
+      - size: small
+        widgets:
+          $include: twitch.yml
+
+      - size: full
+        widgets:
+          $include: youtube.yml
+          
+  - name: Sport
+    columns:
+      - size: small
+        widgets: 
+          - type: rss
+            name: Strava
+            style: list
+            limit: 5
+            collapse-after: 5
+            cache: 12h
+            feeds:
+              - url: https://feedmyride.net/activities/11945392      
+      - size: full      
+        widgets:
+          - type: iframe
+            source: https://nolio.io
+            height: 1500            
+      - size: small
+        widgets: 
+          - type: rss
+            name: Strava
+            style: detailed-list
+            limit: 20
+            collapse-after: 5
+            cache: 12h
+            feeds:
+              - url: https://cyclismerevue.be/feed 
+              - url: https://dwh.lequipe.fr/api/edito/rss?path=/Cyclisme/   
+              - url: https://dwh.lequipe.fr/api/edito/rss?path=/Athletisme/  
+              - url: https://cyclismerevue.be/feed                 

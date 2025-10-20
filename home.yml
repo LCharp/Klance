@@ -1,0 +1,38 @@
+      - size: full
+        widgets:
+
+          - type: rss
+            style: detailed-list
+            limit: 20
+            collapse-after: 5
+            cache: 12h
+            feeds:
+              - url: https://www.gamekult.com/feed.xml
+              - url: https://www.actugaming.net/feed
+              - url: https://korben.info/feed
+              - url: https://next.ink/feed/free
+              - url: https://www.comicsblog.fr/comicsblog.rss
+
+          - type: videos
+            channels:
+              - UCiN9NxmYPYPdB2qQAhBrc7Q # Le Passe Temps
+              - UCQNsB8n2QhRzjdfjyZ_2S_g # RunWise
+              - UC73Te9mCdJcHxr_7hPBeGBw # Origami
+
+          - type: group
+            widgets:
+            
+              - type: reddit
+                subreddit: Switch
+                show-thumbnails: true
+              - type: reddit
+                subreddit: France
+                show-thumbnails: true
+
+      - size: small
+        widgets:
+          - type: weather
+            location: Poitiers, France
+            units: metric # alternatively "imperial"
+            hour-format: 12h # alternatively "24h"
+           

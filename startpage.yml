@@ -1,0 +1,69 @@
+          - type: search
+            search-engine: startpage
+            autofocus: true
+          - type: bookmarks
+            groups:
+              - title: General
+                links:
+                  - title: Filen
+                    url: https://app.filen.io/#/drive/eda6b255-f05d-4849-bdea-210e0b000980   
+                  - title: Ente
+                    url: https://web.ente.io/gallery 
+                  - title: Perplexity
+                    url: https://www.perplexity.ai                         
+                  - title: Calendrier
+                    url: https://app.tuta.com/calendar
+                  - title: kluzik@tuta.io
+                    url: https://app.tuta.com/mail/O_vzoau-1V-9                    
+                  - title: lucas.charp36@gmail.com
+                    url: https://mail.google.com/mail/u/1                    
+              - title: Entertainment
+                color: 10 70 50
+                links:
+                  - title: YouTube
+                    url: https://www.youtube.com/
+                  - title: Twitch
+                    url: https://www.twitch.com/
+                  - title: Prime Video
+                    url: https://www.primevideo.com/
+                  - title: Disney+
+                    url: https://www.disneyplus.com/
+                  - title: Netflix
+                    url: https://www.Netflix.com/
+              - title: Social
+                color: 200 50 50
+                links:
+                  - title: Sens-Critique
+                    url: https://senscritique.fr                
+                  - title: Bluesky
+                    url: https://bsky.app
+                  - title: Reddit
+                    url: https://www.reddit.com/
+                  - title: Twitter
+                    url: https://twitter.com/
+                  - title: Instagram
+                    url: https://www.instagram.com/
+                  - title: Facebook
+                    url: https://www.facebook.com/
+              - title: Shops
+                color: 200 50 50
+                links:
+                  - title: Dealabs
+                    url: https://dealabs.com/   
+                  - title: Swile
+                    url: https://team.swile.co/gift                  
+                  - title: Fnac
+                    url: https://www.fnac.com/
+                  - title: Amazon
+                    url: https://www.amazon.fr/
+              - title: Sport
+                color: 200 50 50
+                links:
+                  - title: Strava
+                    url: https://www.strava.com/dashboard
+                  - title: Nolio
+                    url: https://www.nolio.io/calendar
+                  - title: Polar Flow
+                    url: https://flow.polar.com/diary
+                  - title: Garmin Connect
+                    url: https://connect.garmin.com/modern/home                  
